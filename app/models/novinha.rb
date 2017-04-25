@@ -1,0 +1,2 @@
+class Novinha < ApplicationRecord
+end

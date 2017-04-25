@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Novinhas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Data picote</th>
+      <th>Nota</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @novinhas.each do |novinha| %>
+      <tr>
+        <td><%= novinha.nome %></td>
+        <td><%= novinha.data_picote %></td>
+        <td><%= novinha.nota %></td>
+        <td><%= link_to 'Show', novinha %></td>
+        <td><%= link_to 'Edit', edit_novinha_path(novinha) %></td>
+        <td><%= link_to 'Destroy', novinha, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Novinha', new_novinha_path %>

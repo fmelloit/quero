@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @novinha.nome %>
+</p>
+
+<p>
+  <strong>Data picote:</strong>
+  <%= @novinha.data_picote %>
+</p>
+
+<p>
+  <strong>Nota:</strong>
+  <%= @novinha.nota %>
+</p>
+
+<%= link_to 'Edit', edit_novinha_path(@novinha) %> |
+<%= link_to 'Back', novinhas_path %>

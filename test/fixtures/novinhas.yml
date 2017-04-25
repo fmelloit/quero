@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  data_picote: 2017-04-25
+  nota: 9.99
+
+two:
+  nome: MyString
+  data_picote: 2017-04-25
+  nota: 9.99

@@ -1,0 +1,2 @@
+module NovinhasHelper
+end
